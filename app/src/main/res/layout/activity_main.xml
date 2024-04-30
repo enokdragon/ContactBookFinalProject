@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/makeContactBtn"
+        android:layout_width="163dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/creatNewBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewContactList" />
+
+    <TextView
+        android:id="@+id/titleBox"
+        android:layout_width="147dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="casual"
+        android:text="@string/titleBox"
+        android:textSize="48sp"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/viewContactList"
+        android:layout_width="163dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/viewBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleBox" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

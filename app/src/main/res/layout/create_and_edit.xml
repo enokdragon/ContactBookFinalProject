@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/nameTV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="79dp"
+        android:text="@string/nameBox"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/phoneNumTV"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/phoneNumTV"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="498dp"
+        android:text="@string/phoneNumBox"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTV" />
+
+    <TextView
+        android:id="@+id/addressTV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="13dp"
+        android:text="@string/addressBox"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/addressET"
+        app:layout_constraintEnd_toEndOf="@+id/phoneNumTV"
+        app:layout_constraintStart_toStartOf="@+id/phoneNumET"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumET" />
+
+    <TextView
+        android:id="@+id/emailTV"
+        android:layout_width="151dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/emailBox"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/emailET"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addressET" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="221dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="67dp"
+        android:fontFamily="monospace"
+        android:text="@string/createAndEdit"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/nameET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/birthdayTV"
+        android:layout_width="146dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/birthdayBox"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/birthdayET"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailET" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="79dp"
+        android:text="@string/saveContact"
+        app:layout_constraintBottom_toBottomOf="@+id/deleteBtn"
+        app:layout_constraintEnd_toStartOf="@+id/deleteBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/deleteBtn" />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/deleteContact"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/saveBtn"
+        app:layout_constraintTop_toBottomOf="@+id/birthdayET" />
+
+    <EditText
+        android:id="@+id/nameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="@string/nameEditHint"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/phoneNumTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/phoneNumET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="@string/phoneHint"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/addressTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumTV" />
+
+    <EditText
+        android:id="@+id/addressET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="@string/addressHint"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/emailTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addressTV" />
+
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/emailHint"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/birthdayTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailTV" />
+
+    <EditText
+        android:id="@+id/birthdayET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:hint="@string/birthdayHint"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/deleteBtn"
+        app:layout_constraintStart_toStartOf="@+id/birthdayTV"
+        app:layout_constraintTop_toBottomOf="@+id/birthdayTV" />
+</androidx.constraintlayout.widget.ConstraintLayout>
