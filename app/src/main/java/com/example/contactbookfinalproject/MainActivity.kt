@@ -14,11 +14,12 @@ class MainActivity : AppCompatActivity() {
         val makeContactBtn = findViewById<Button>(R.id.makeContactBtn)
 
         viewContactBtn.setOnClickListener{
-            startActivity(Intent(this@MainActivity, ContactListScreen::class.java))
+            startActivity(Intent(this, ContactListScreen::class.java))
         }
 
         makeContactBtn.setOnClickListener{
-            startActivity(Intent(this@MainActivity, CreateAndEdit::class.java))
+            val startCreateEdit = Intent(this@MainActivity, CreateAndEdit::class.java)
+            startActivity(Intent(startCreateEdit))
         }
     }
 }
