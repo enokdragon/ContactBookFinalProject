@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/nameCLTV"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toStartOf="@+id/emailCLTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/phoneCLTV"
+        android:layout_width="115dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/addressCLTV"
+        app:layout_constraintEnd_toStartOf="@+id/birthdayCLTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/addressCLTV"
+        android:layout_width="104dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:text="text"
+        app:layout_constraintEnd_toEndOf="@+id/phoneCLTV"
+        app:layout_constraintTop_toBottomOf="@+id/phoneCLTV" />
+
+    <TextView
+        android:id="@+id/emailCLTV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/birthdayCLTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nameCLTV"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/birthdayCLTV"
+        android:layout_width="109dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="132dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

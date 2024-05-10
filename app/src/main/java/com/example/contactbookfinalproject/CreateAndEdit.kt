@@ -45,11 +45,11 @@ class CreateAndEdit : AppCompatActivity(){
                     .show()
             }
             val addToList = Intent(this@CreateAndEdit, ContactListScreen::class.java)
-            addToList.putExtra("Name", name.toString())
-            addToList.putExtra("Phone", phone.toString())
-            addToList.putExtra("Address", address.toString())
-            addToList.putExtra("Email", email.toString())
-            addToList.putExtra("Birthday", birth.toString())
+            addToList.putExtra("Name", name.text.toString())
+            addToList.putExtra("Phone", phone.text.toString())
+            addToList.putExtra("Address", address.text.toString())
+            addToList.putExtra("Email", email.text.toString())
+            addToList.putExtra("Birthday", birth.text.toString())
 
             startActivity(addToList) //return to contact list page where we will add the contact to the array
         }
